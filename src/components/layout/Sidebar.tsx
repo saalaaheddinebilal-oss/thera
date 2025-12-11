@@ -53,6 +53,12 @@ export function Sidebar({ activePage, onNavigate }: SidebarProps) {
           { id: 'reports', labelKey: 'nav.reports', icon: FileText },
           { id: 'messages', labelKey: 'nav.messages', icon: MessageSquare },
         ];
+      case 'system_admin':
+        return [
+          { id: 'dashboard', labelKey: 'nav.dashboard', icon: LayoutDashboard },
+          { id: 'ai-training', labelKey: 'nav.aiTraining', icon: Brain },
+          { id: 'messages', labelKey: 'nav.messages', icon: MessageSquare },
+        ];
       default:
         return [];
     }

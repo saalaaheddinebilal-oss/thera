@@ -14,6 +14,7 @@ import { ProgressPage } from './pages/ProgressPage';
 import { RecommendationsPage } from './pages/RecommendationsPage';
 import { IEPPlansPage } from './pages/IEPPlansPage';
 import { AIAnalysisPage } from './pages/AIAnalysisPage';
+import { AIModelTrainingPage } from './pages/AIModelTrainingPage';
 
 function AppContent() {
   const { user, profile, loading } = useAuth();
@@ -63,6 +64,8 @@ function AppContent() {
         return <IEPPlansPage />;
       case 'ai-analysis':
         return <AIAnalysisPage />;
+      case 'ai-training':
+        return <AIModelTrainingPage />;
       default:
         return (
             <div className="p-8">
