@@ -10,3 +10,54 @@ Current AI analysis modals that only accept text input
 Plan: Enhanced Admin Training Dashboard
 
 1. Real-Time Audio Analysis Enhancement
+Add Web Audio API integration to SpeechAnalysisModal for live microphone recording
+Implement audio recording controls (start, stop, pause, visualize waveform)
+Add audio file upload capability for pre-recorded samples
+Create audio preprocessing service to convert recordings to format compatible with ML engines
+Send recorded audio to backend speech engine for real analysis
+Update speech engine to process actual audio files using librosa
+Display real-time pronunciation feedback during recording
+
+2. Real-Time Video Analysis Enhancement
+
+Add WebRTC integration to BehaviorAnalysisModal and EmotionDetectionModal for live camera access
+Implement video recording controls with live preview
+Add video file upload with format validation (MP4, WebM, AVI)
+Create frame extraction service for video processing
+Send video frames to behavior and emotion engines for real-time analysis
+Update emotion engine to use actual facial recognition models
+Update behavior engine to analyze movement patterns from video
+Display real-time analysis feedback overlay on video preview
+
+3. AI Model Training Admin Dashboard
+
+Create new AIModelTrainingPage component accessible only to system_admin role
+Add navigation menu item for "AI Model Training" in admin sidebar
+Build dataset management interface to view available datasets in ai-service/datas folder
+Create training configuration panel with hyperparameter controls
+Implement model selection dropdown (Random Forest, Gradient Boosting, Neural Networks)
+Add training/testing split ratio selector
+Build feature selection interface for choosing input columns
+Create target variable selector for classification/regression tasks
+
+4. Training Progress Monitoring
+
+Implement WebSocket connection between frontend and AI service for real-time updates
+Create progress bar showing training epochs and completion percentage
+Display live training metrics (accuracy, loss, precision, recall, F1-score)
+Build real-time chart visualization for training vs validation performance
+Show confusion matrix after training completion
+Display feature importance rankings
+Add training time estimation and elapsed time counter
+Implement training cancellation capability
+
+5. Model Testing and Evaluation Interface
+
+Create model comparison table showing all trained models
+Display evaluation metrics for each model version
+Add test data upload for model validation
+Build prediction testing panel for single sample predictions
+Show cross-validation scores with statistical analysis
+Implement ROC curve and precision-recall curve visualization
+Create model versioning system with save/load/delete options
+Add model deployment toggle to activate best performing model
