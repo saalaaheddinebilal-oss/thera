@@ -1,0 +1,8 @@
+Project Understanding
+Your platform is an AI-Powered Therapeutic Education Platform with:
+
+React frontend with bilingual support (Arabic/English)
+Python FastAPI AI service with 10 ML engines
+Existing autism screening model trained on real dataset
+Multiple user roles (parent, therapist, school_admin, system_admin)
+Current AI analysis modals that only accept text input
