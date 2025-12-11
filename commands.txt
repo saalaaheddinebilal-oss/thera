@@ -7,6 +7,6 @@ Existing autism screening model trained on real dataset
 Multiple user roles (parent, therapist, school_admin, system_admin)
 Current AI analysis modals that only accept text input
 
-Plan: Enhanced Real-Time AI Analysis System with Admin Training Dashboard
+Plan: Enhanced Admin Training Dashboard
 
 1. Real-Time Audio Analysis Enhancement
